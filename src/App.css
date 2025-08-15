@@ -778,6 +778,34 @@ button:disabled {
   .file-upload-subtitle {
     font-size: 0.75rem;
   }
+  
+  .clear-messages-btn {
+    font-size: 1.1rem;
+    padding: 1.25rem 1.5rem;
+    font-weight: 700;
+    color: #374151;
+    background: rgba(107, 114, 128, 0.2);
+    border-color: rgba(107, 114, 128, 0.4);
+    letter-spacing: 0.05em;
+  }
+  
+  .clear-messages-btn span {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 360px) {
+  .clear-messages-btn {
+    font-size: 1rem;
+    padding: 1.125rem 1.25rem;
+    font-weight: 600;
+  }
+  
+  .clear-messages-btn span {
+    font-size: 1rem;
+    font-weight: 600;
+  }
 }
 
 /* Loading Animation */
