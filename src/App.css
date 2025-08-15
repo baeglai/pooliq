@@ -1322,6 +1322,42 @@ html .pool-modal-overlay,
   transition: all 0.3s ease;
 }
 
+/* Mobile için X butonunu daha uygun konuma getir */
+@media (max-width: 768px) {
+  .pool-modal-close {
+    top: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    font-size: 1.75rem;
+  }
+  
+  /* Mobile'da Save Settings butonunun disabled durumunda daha iyi görünmesi */
+  .pool-save-button:disabled {
+    background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.25);
+    cursor: not-allowed;
+    transform: none;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 480px) {
+  .pool-modal-close {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 32px;
+    height: 32px;
+    font-size: 1.5rem;
+  }
+  
+  /* Küçük mobil cihazlarda Save Settings butonunun daha kompakt görünmesi */
+  .pool-save-button:disabled {
+    padding: 0.875rem;
+    font-size: 0.95rem;
+  }
+}
+
 .pool-modal-close:hover {
   background: rgba(107, 114, 128, 0.1);
   color: #374151;
@@ -1603,24 +1639,27 @@ html .pool-modal-overlay,
   color: white;
 }
 
-/* Loading State for Save Button */
+/* Loading State for Save Button - Removed for mobile */
 .pool-save-button:disabled {
   position: relative;
   overflow: hidden;
 }
 
-.pool-save-button:disabled::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  margin: -10px 0 0 -10px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-top: 2px solid white;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
+/* Loading spinner sadece desktop'ta gösterilsin */
+@media (min-width: 769px) {
+  .pool-save-button:disabled::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
 }
 
 /* Enhanced Modal Close Button */
@@ -1746,6 +1785,42 @@ html .profile-modal-overlay,
   justify-content: center;
   border-radius: 50%;
   transition: all 0.3s ease;
+}
+
+/* Mobile için X butonunu daha uygun konuma getir */
+@media (max-width: 768px) {
+  .profile-modal-close {
+    top: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    font-size: 1.75rem;
+  }
+  
+  /* Mobile'da Profile Save butonunun disabled durumunda daha iyi görünmesi */
+  .profile-save-button:disabled {
+    background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.25);
+    cursor: not-allowed;
+    transform: none;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-modal-close {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 32px;
+    height: 32px;
+    font-size: 1.5rem;
+  }
+  
+  /* Küçük mobil cihazlarda Profile Save butonunun daha kompakt görünmesi */
+  .profile-save-button:disabled {
+    padding: 0.875rem;
+    font-size: 0.95rem;
+  }
 }
 
 .profile-modal-close:hover {
