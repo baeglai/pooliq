@@ -201,8 +201,12 @@ function App() {
         });
         
         // Close modal and show success message
-        setShowPoolModal(false);
         setShowPoolSuccessMessage(true);
+        
+        // Modal'ı kısa bir gecikme ile kapat (mobil için daha iyi UX)
+        setTimeout(() => {
+          setShowPoolModal(false);
+        }, 300);
         
         // Hide success message after 5 seconds
         setTimeout(() => {
@@ -211,6 +215,8 @@ function App() {
         
       } catch (error) {
         console.error('Error saving pool settings:', error);
+        // Error durumunda da modal'ı kapat
+        setShowPoolModal(false);
       } finally {
         setIsPoolSaving(false);
       }
@@ -263,8 +269,12 @@ function App() {
         setNickname(profileData.nickname.trim());
         
         // Close modal and show success message
-        setShowProfileModal(false);
         setShowProfileSuccessMessage(true);
+        
+        // Modal'ı kısa bir gecikme ile kapat (mobil için daha iyi UX)
+        setTimeout(() => {
+          setShowProfileModal(false);
+        }, 300);
         
         // Hide success message after 5 seconds
         setTimeout(() => {
@@ -273,6 +283,8 @@ function App() {
         
       } catch (error) {
         console.error('Error saving profile settings:', error);
+        // Error durumunda da modal'ı kapat
+        setShowProfileModal(false);
       } finally {
         setIsProfileSaving(false);
       }
