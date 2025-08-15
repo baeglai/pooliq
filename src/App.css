@@ -1468,9 +1468,9 @@ html .pool-modal-overlay,
   .pool-modal-close {
     top: 0.75rem;
     right: 0.75rem;
-    width: 24px;
-    height: 24px;
-    font-size: 1rem;
+    width: 20px;
+    height: 20px;
+    font-size: 0.875rem;
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -1478,7 +1478,7 @@ html .pool-modal-overlay,
   
   .pool-modal-title {
     margin-top: 1rem;
-    padding-right: 1.75rem;
+    padding-right: 1.5rem;
   }
   
   /* Mobile'da Save Settings butonunun disabled durumunda daha iyi görünmesi */
@@ -1495,15 +1495,15 @@ html .pool-modal-overlay,
   .pool-modal-close {
     top: 0.5rem;
     right: 0.5rem;
-    width: 20px;
-    height: 20px;
-    font-size: 0.875rem;
+    width: 18px;
+    height: 18px;
+    font-size: 0.75rem;
     background: rgba(255, 255, 255, 0.95);
   }
   
   .pool-modal-title {
     margin-top: 1.5rem;
-    padding-right: 1.5rem;
+    padding-right: 1.25rem;
     font-size: 1.75rem;
   }
   
@@ -1950,9 +1950,9 @@ html .profile-modal-overlay,
   .profile-modal-close {
     top: 0.75rem;
     right: 0.75rem;
-    width: 24px;
-    height: 24px;
-    font-size: 1rem;
+    width: 20px;
+    height: 20px;
+    font-size: 0.875rem;
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -1960,7 +1960,7 @@ html .profile-modal-overlay,
   
   .profile-modal-title {
     margin-top: 1rem;
-    padding-right: 1.75rem;
+    padding-right: 1.5rem;
   }
   
   /* Mobile'da Profile Save butonunun disabled durumunda daha iyi görünmesi */
@@ -1977,15 +1977,15 @@ html .profile-modal-overlay,
   .profile-modal-close {
     top: 0.5rem;
     right: 0.5rem;
-    width: 20px;
-    height: 20px;
-    font-size: 0.875rem;
+    width: 18px;
+    height: 18px;
+    font-size: 0.75rem;
     background: rgba(255, 255, 255, 0.95);
   }
   
   .profile-modal-title {
     margin-top: 1.5rem;
-    padding-right: 1.5rem;
+    padding-right: 1.25rem;
     font-size: 1.75rem;
   }
   
