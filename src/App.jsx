@@ -1124,58 +1124,31 @@ function App() {
          />
        </div>
       
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
-        <div>
+      <div className="welcome-section">
+        <div className="welcome-content">
           <h2>Welcome, {nickname}!</h2>
           <p style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--primary-color)', marginBottom: '0.5rem' }}>
             Pool IQ - Smart Water Analysis
           </p>
         </div>
-        <div style={{ display: 'flex', gap: '0.5rem' }}>
+        <div className="welcome-buttons">
 
           <button 
             onClick={() => setShowPoolModal(true)}
-            style={{ 
-              background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
-              border: '1px solid rgba(255, 255, 255, 0.1)',
-              backdropFilter: 'blur(10px)',
-              boxShadow: '0 4px 12px rgba(16, 185, 129, 0.2)',
-              color: '#f9fafb',
-              fontWeight: '500',
-              letterSpacing: '0.025em',
-              fontSize: '0.9rem'
-            }}
+            className="welcome-button manage-pool"
           >
             Manage Pool
           </button>
           <button 
             onClick={() => setShowProfileModal(true)}
-            style={{ 
-              background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
-              border: '1px solid rgba(255, 255, 255, 0.1)',
-              backdropFilter: 'blur(10px)',
-              boxShadow: '0 4px 12px rgba(16, 185, 129, 0.2)',
-              color: '#f9fafb',
-              fontWeight: '500',
-              letterSpacing: '0.025em',
-              fontSize: '0.9rem'
-            }}
+            className="welcome-button profile"
             data-testid="profile-button"
           >
             Profile
           </button>
           <button 
             onClick={() => logout({ returnTo: window.location.origin })}
-            style={{ 
-              background: 'linear-gradient(135deg, #6b7280 0%, #4b5563 100%)',
-              border: '1px solid rgba(255, 255, 255, 0.1)',
-              backdropFilter: 'blur(10px)',
-              boxShadow: '0 4px 12px rgba(107, 114, 128, 0.2)',
-              color: '#f9fafb',
-              fontWeight: '500',
-              letterSpacing: '0.025em',
-              fontSize: '0.9rem'
-            }}
+            className="welcome-button sign-out"
           >
             Sign Out
           </button>
